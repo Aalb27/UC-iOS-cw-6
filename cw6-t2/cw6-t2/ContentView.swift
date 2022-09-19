@@ -30,10 +30,15 @@ struct ContentView: View {
                 }
                 
             TextField("اكتب اسمك", text: $what)
-                NavigationLink(destination: diarypage(diarybackground: diarybackground), label:{ Text("SAVE")})
+                Spacer()
+                Spacer()
+                NavigationLink(destination: diarypage(diarybackground: diarybackground), label:{ Text("حفظ")})
+                    .font(.largeTitle)
+                    .frame(width: 200)
+                    .background(Color.green)
                                
   Spacer()
-                Spacer()
+                
                     .padding()
         
         
